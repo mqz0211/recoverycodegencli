@@ -1,9 +1,10 @@
 import secrets
 import os
-import sys
+import time
 
-# ASCII art banner
-ASCII_BANNER = r"""
+# ASCII art logo
+ASCII_ART = r"""
+  ____  _     ___  ____  ____  ____  ____  ____ 
 
     ____  _________________________   __
    / __ \/ ____/ ____/ ____/ ____/ | / /
@@ -14,30 +15,37 @@ ASCII_BANNER = r"""
 
 """
 
-WORDLIST_PATH = "english.txt"
-
+# Load wordlist file
 def load_wordlist(path):
     if not os.path.exists(path):
-        raise FileNotFoundError(f"Wordlist not found: {path}")
+        raise FileNotFoundError(f"[ERROR] Wordlist not found: {path}")
     with open(path, "r", encoding="utf-8") as f:
         return [word.strip() for word in f.readlines()]
 
+# Generate one mnemonic
 def generate_mnemonic(wordlist, word_count):
     return " ".join(secrets.choice(wordlist) for _ in range(word_count))
 
 def main():
-    print(ASCII_BANNER)
+    print(ASCII_ART)
+    print("[INFO] Starting mnemonic generation...\n")
+
+    # Use wordlist file from current directory
+    wordlist_path = os.path.join(os.path.dirname(__file__), "english.txt")
+
     try:
-        wordlist = load_wordlist(WORDLIST_PATH)
+        wordlist = load_wordlist(wordlist_path)
     except FileNotFoundError as e:
         print(e)
-        sys.exit(1)
+        return
 
-    count = 20
-    word_count = 12
-    for i in range(count):
-        mnemonic = generate_mnemonic(wordlist, word_count)
-        print(f"{i+1:02}: {mnemonic}")
+    word_count = 12  # or change to 24 if desired
+    num_phrases = 20
+
+    for i in range(1, num_phrases + 1):
+        phrase = generate_mnemonic(wordlist, word_count)
+        print(f"[{i}] {phrase}")
+        time.sleep(0.1)  # for smoother output
 
 if __name__ == "__main__":
     main()
