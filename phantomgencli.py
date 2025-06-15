@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
 import secrets
 import os
-import argparse
+import sys
 
-# ASCII art logo
-ASCII_ART = r"""
+# ASCII art banner
+ASCII_BANNER = r"""
 
     ____  _________________________   __
    / __ \/ ____/ ____/ ____/ ____/ | / /
@@ -15,7 +14,7 @@ ASCII_ART = r"""
 
 """
 
-WORDLIST_PATH = r"C:\Users\User\hash\english.txt"  # Adjust as needed
+WORDLIST_PATH = "english.txt"
 
 def load_wordlist(path):
     if not os.path.exists(path):
@@ -27,18 +26,18 @@ def generate_mnemonic(wordlist, word_count):
     return " ".join(secrets.choice(wordlist) for _ in range(word_count))
 
 def main():
-    parser = argparse.ArgumentParser(description="CLI BIP-39 Mnemonic Generator")
-    parser.add_argument("-n", "--num", type=int, default=1, help="Number of mnemonics to generate")
-    parser.add_argument("-w", "--words", type=int, choices=[12, 24], default=12, help="Number of words in each mnemonic")
-    args = parser.parse_args()
+    print(ASCII_BANNER)
+    try:
+        wordlist = load_wordlist(WORDLIST_PATH)
+    except FileNotFoundError as e:
+        print(e)
+        sys.exit(1)
 
-    wordlist = load_wordlist(WORDLIST_PATH)
-
-    print(ASCII_ART)
-    print(f"Generating {args.num} mnemonic phrase(s), each with {args.words} words:\n")
-
-    for i in range(args.num):
-        print(f"{i+1:02d}: {generate_mnemonic(wordlist, args.words)}")
+    count = 20
+    word_count = 12
+    for i in range(count):
+        mnemonic = generate_mnemonic(wordlist, word_count)
+        print(f"{i+1:02}: {mnemonic}")
 
 if __name__ == "__main__":
     main()
