@@ -1,8 +1,10 @@
 # PhantomGen CLI
 
-PhantomGen CLI is a simple BIP-39 recovery mnemonic generator that allows you to generate 12 or 24-word phrases from the official English wordlist.
-
-![ASCII Art Banner](https://raw.githubusercontent.com/mqz0211/recoverycodegencli/main/banner.png)
+PhantomGen CLI is a simple BIP-39 recovery mnemonic generator that allows you to generate 12 or 24-word phrases from the official English wordlist.                          
+ _____ _____ _____ _____ _____ _____ 
+| __  |   __|     |   __|   __|   | |
+|    -|   __|   --|  |  |   __| | | |
+|__|__|_____|_____|_____|_____|_|___|
 
 ## Features
 
