@@ -14,7 +14,7 @@ PhantomGen CLI is a simple BIP-39 recovery mnemonic generator that allows you to
 
 ## Run on Cloud Shell
 
-##Launch in Google Cloud Shell
+## Launch in Google Cloud Shell
 
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/mqz0211/recoverycodegencli&cloudshell_working_dir=recoverycodegencli)
 
