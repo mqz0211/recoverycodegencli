@@ -16,10 +16,17 @@ PhantomGen CLI is a simple BIP-39 recovery mnemonic generator that allows you to
 
 Click the button below to launch this project instantly in Cloud Shell:
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/mqz0211/recoverycodegencli&cloudshell_working_dir=recoverycodegencli)   [![Run on Replit](https://replit.com/badge/github/mqz0211/recoverycodegencli)](https://replit.com/new/github.com/mqz0211/recoverycodegencli)
+Klik butang di bawah untuk terus launch projek ni di Google Cloud Shell:
 
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/mqz0211/recoverycodegencli&cloudshell_working_dir=recoverycodegencli)
 
+## Guna dalam Gitpod (IDEC Cloud)
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mqz0211/recoverycodegencli)
+
+## Jalankan di Replit (sesuai untuk beginner & student)
+
+[![Run on Replit](https://replit.com/badge/github/mqz0211/recoverycodegencli)](https://replit.com/new/github.com/mqz0211/recoverycodegencli)
 
 ## Usage
 
