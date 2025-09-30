@@ -49,19 +49,19 @@ PhantomGen CLI ialah penjana mnemonic recovery BIP-39 yang senang dan ringan. Al
 ## Fitur Utama
 
 - Menjana frasa pemulihan 12 atau 24-perkataan
-- Mesra pengguna, ringan dan boleh jalan terus
+- Mesra pengguna dan ringan 
 
-## Guna di Cloud Shell ☁️
+## Guna di Cloud Shell 
 
 Klik butang di bawah untuk terus launch projek ni di Google Cloud Shell:
 
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/mqz0211/recoverycodegencli&cloudshell_working_dir=recoverycodegencli)
 
-## Guna dalam Gitpod (IDEC Cloud)
+## Guna dalam Ona
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mqz0211/recoverycodegencli)
 
-## Jalankan di Replit (sesuai untuk beginner & student)
+## Guna di Replit 
 
 [![Run on Replit](https://replit.com/badge/github/mqz0211/recoverycodegencli)](https://replit.com/new/github.com/mqz0211/recoverycodegencli)
 
@@ -82,7 +82,6 @@ Projek ini dilesenkan di bawah MIT License. Sila rujuk fail LICENSE untuk butira
 Penafian (Disclaimer)
 Tool ini disediakan hanya untuk tujuan pembelajaran dan maklumat sahaja. Pengguna bertanggungjawab sepenuhnya terhadap penggunaan tool ini. Penulis tidak bertanggungjawab ke atas sebarang salah guna, kerosakan, atau akibat undang-undang yang timbul dari penggunaannya.
 
-Pastikan anda mematuhi semua undang-undang tempatan dan antarabangsa semasa menggunakan kod ini. Guna dengan penuh tanggungjawab.
+Pastikan anda mematuhi semua undang-undang tempatan dan antarabangsa semasa menggunakan kod ini. Guna dengan tanggungjawan sepenuhnya 
 
-🇲🇾 Dibangunkan dengan semangat hack & belajar. Kalau rasa tool ni berguna, boleh bagi ⭐ dekat repo ni!
 
